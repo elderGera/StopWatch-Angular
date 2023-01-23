@@ -1,0 +1,14 @@
+.stopwatch {
+  background: grey;
+  border-radius: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  min-height: 85px;
+
+  button {
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div class="stopwatch">
+  <h3>{{ title }}</h3>
+  <div>
+    <span>{{ min }} :</span>
+    <span> {{ sec }}</span>
+  </div>
+  <div>
+    <button (click)="start()">
+      <span *ngIf="!running" [ngStyle]="{ color: 'green' }">Start</span>
+      <span *ngIf="running" [ngStyle]="{ color: 'red' }">Stop</span>
+    </button>
+    <button (dblclick)="stop()" [ngStyle]="{ color: 'blue' }">Wait</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+</div>
